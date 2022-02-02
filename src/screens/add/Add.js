@@ -2,6 +2,7 @@ import "./Add.css";
 import { Button } from "@material-ui/core";
 import { useState } from "react";
 import { CometChat } from "@cometchat-pro/chat";
+import smn from "../../image/smn.png";
 
 function Add() {
   const [channel, setChannel] = useState("");
@@ -67,7 +68,7 @@ function Add() {
   return (
     <div className="add">
       <form className="add__container">
-        <img src="/logo.png" alt="Slack Logo" />
+        <img src={smn} alt="Slack Logo" />
         <h1>Add New Channel</h1>
         <div className="add__form">
           <input
