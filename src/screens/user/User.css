@@ -2,6 +2,7 @@
   flex: 0.7;
   flex-grow: 1;
   display: flex;
+  font-family: caviar;
 }
 
 .user__chat {

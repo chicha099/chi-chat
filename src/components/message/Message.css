@@ -3,6 +3,7 @@
   align-items: center;
   margin: 10px 0;
   padding: 5px 20px;
+  font-family: caviar;
 }
 
 .message:hover {
@@ -30,6 +31,7 @@
 
 .message__text {
   font-size: 14px;
+  font-weight: bold;
 }
 
 .message__data {

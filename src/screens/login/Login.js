@@ -4,6 +4,8 @@ import { auth, provider } from "../../firebase";
 import { CometChat } from "@cometchat-pro/chat";
 import { cometChat } from "../../app.config";
 import { useState } from "react";
+import smn from "../../image/smn.png";
+import google from "../../image/google.png";
 
 function Login() {
   const [loading, setLoading] = useState(false);
@@ -62,12 +64,14 @@ function Login() {
   return (
     <div className="login">
       <div className="login__container">
-        <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack Logo" />
+        <h1>CHICHAT</h1>
+        <br></br>
+        <img src={smn} alt="Slack Logo" />
 
-        <h4>Sign in to CometChat</h4>
-        <p>cometchat.slack.com</p>
-        <Button onClick={signIn}>
-          {!loading ? "Sign In With Google" : <div id="loading"></div>}
+        <h4>Sign in using Google</h4>
+        {/* <p>cometchat.slack.com</p> */}
+        <Button onClick={signIn} className="font">
+          {!loading ? <img src={google} width="70px"/> : <div id="loading"></div>}
         </Button>
       </div>
     </div>

@@ -7,6 +7,7 @@
 
 .login__container {
   padding: 100px;
+  padding-top: 50px;
   text-align: center;
   background-color: white;
   border-radius: 10px;
@@ -15,21 +16,44 @@
 
 .login__container > img {
   object-fit: contain;
-  height: 100px;
+  height: 200px;
   margin-bottom: 40px;
+}
+
+@font-face {
+  font-family: 'caviar';
+  src: url(CaviarDreams.woff);
+  font-style: normal;
+  font-weight: 100;
+}
+
+.login__container > h4 {
+  font-size: larger;
+  font-family: caviar;
+}
+
+.login__container > h1 {
+  font-family: caviar;
+}
+
+.login__container > span {
+  font-family: caviar;
 }
 
 .login__container > button {
   margin-top: 50px;
   text-transform: inherit !important;
-  background-color: #0a8d48;
+  /* background-color: #5b00ac; */
   color: white;
-  border: 1px solid #0a8d48;
+  border-radius: 50%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  /* border: 1px solid #5b00ac; */
 }
 
-.login__container > button:hover {
+.login__container > button:active {
   background-color: transparent;
-  color: #0a8d48;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  color: #5b00ac;
 }
 
 #loading {
@@ -57,4 +81,8 @@
   to {
     -webkit-transform: rotate(360deg);
   }
+}
+
+.font > img{
+  background-color: white;
 }

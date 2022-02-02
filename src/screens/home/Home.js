@@ -1,6 +1,7 @@
 import "./Home.css";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import smn from "../../image/smn.png";
 
 function Home() {
   const history = useHistory();
@@ -12,16 +13,17 @@ function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img src="https://a.slack-edge.com/80588/marketing/img/icons/icon_slack_hash_colored.png" alt="Slack Logo" />
-        <h1>Welcome to Slack</h1>
+        <img src={smn} alt="Slack Logo" />
+        <h1>Welcome to ChiChat</h1>
         <p>
-          Slack brings all your team communication into one place, makes it all
-          instantly searchable and available wherever you go.
+          ChiChat brings all your communication's into one place.
         </p>
 
         <p>
-          Our aim is to make your working life simpler, more pleasant and more
-          productive.
+          "We may not stay quick, <br/>
+If we are weak or sage, <br/>
+but a lot can squeak <br/>
+As we start to age"
         </p>
 
         <Button onClick={addChannel}>Create Channel</Button>

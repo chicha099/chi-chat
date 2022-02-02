@@ -72,7 +72,7 @@ function Sidebar() {
       <div className="sidebar__header">
         <div className="sidebar__info">
           <h2>
-            <Link to="/">Cometchat (e)</Link>
+            <Link to="/">ChiChat</Link>
           </h2>
           <h3>
             <FiberManualRecordIcon />
